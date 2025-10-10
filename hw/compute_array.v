@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
 // compute_array.v
-// Compute array with 256 modular adders and multipliers (Verilog-2001)
+// Compute array with 256 modular adders and multipliers
 // - Per-lane limb_id selects modulus & Montgomery n0' via mod_table_50
 // - Flattened bus interfaces for portability
+// Developer: Zhihan Xu
 // -----------------------------------------------------------------------------
 `timescale 1ns/1ps
 

@@ -1,10 +1,11 @@
 // -----------------------------------------------------------------------------
-// mem_group_2lvl.v  (Verilog-2001)
+// mem_group_2lvl.v 
 // Two-level memory: 32 banks, each bank has 8 sub-banks.
 // Each sub-bank stores blocks of 8 coefficients @ 50 bits each => 400-bit line.
 // Simple 1R/1W at block granularity.
 // Resource target per bank: exactly 25 URAM + 106 BRAM18, distributed across
-// its 8 sub-banks (configure inside mem_bank for Verilog-2001 compliance).
+// its 8 sub-banks (configure inside mem_bank).
+// Developer: Zhihan Xu
 // -----------------------------------------------------------------------------
 `timescale 1ns/1ps
 

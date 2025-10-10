@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
-// mem_bank.v (Verilog-2001)
+// mem_bank.v
 // One bank with 8 sub-banks. Routes per-sub-bank resource counts.
+// Developer: Zhihan Xu
 // -----------------------------------------------------------------------------
 `timescale 1ns/1ps
 
