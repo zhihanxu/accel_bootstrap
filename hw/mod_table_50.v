@@ -7,7 +7,7 @@
 
 module mod_table_50 (
     input  wire [5:0]  id,            // 0..32
-    output reg  [63:0] modulus,       // use [49:0] in your datapath
+    output reg  [63:0] modulus,       // use [49:0] in the datapath
     output reg  [63:0] modulus_inv    // Montgomery n0' for 64-bit radix
 );
 

@@ -4,6 +4,7 @@
 // Internally split into URAM-backed stripe and BRAM18-backed stripe.
 // The number of URAM and BRAM tiles are compile-time parameters so that the
 // bank-level sum exactly hits 25 URAM + 106 BRAM18 per bank.
+// Developer: Zhihan Xu
 // -----------------------------------------------------------------------------
 `timescale 1ns/1ps
 

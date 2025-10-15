@@ -51,12 +51,6 @@ module mem_group_2lvl #(
         assign waddr_s = waddr_bus[b*SB*AAW +: SB*AAW];
         assign raddr_s = raddr_bus[b*SB*AAW +: SB*AAW];
 
-        // NOTE:
-        // Verilog-2001 does not support unpacked array parameters or '{...} literals.
-        // The per-sub-bank resource split (e.g., URAM: {3,3,3,3,3,3,3,4} and
-        // BRAM18: {13,13,13,13,13,13,14,14}) should be encoded *inside* mem_bank
-        // using localparams or parameters (URAM_CNT0..7, BR18_CNT0..7).
-
         mem_bank #(
           .SUBBANKS_PER_BANK (SUBBANKS_PER_BANK),
           .COEFF_BITS        (COEFF_BITS),
